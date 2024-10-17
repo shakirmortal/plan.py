@@ -1,0 +1,4 @@
+streamlit  # Make sure Streamlit version matches the one you used
+transformers  # Adjust to your version
+torch  # Ensure compatibility with transformers
+peft  # Only include if you are using peft for model tuning
