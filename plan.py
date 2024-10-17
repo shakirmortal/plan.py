@@ -3,9 +3,10 @@ import streamlit as st
 from transformers import GPTNeoForCausalLM, GPT2Tokenizer
 
 # Load your fine-tuned model and tokenizer
-model_name = "./fine_tuned_ai_assistant"  # Use the correct path or Hugging Face model name
+model_name = "/content/fine_tuned_ai_assistant"  # Use the absolute path or Hugging Face repo ID
 model = GPTNeoForCausalLM.from_pretrained(model_name)
 tokenizer = GPT2Tokenizer.from_pretrained(model_name)
+
 
 # Function to generate study plan
 def generate_study_plan(subject):
